@@ -31,12 +31,14 @@ Before you run the project, make sure you have:
 ---
 
 ## 📂 Project Structure
+```
 .
 ├── Dockerfile # Docker build instructions
 ├── main.py # Python script using OpenAI API
 ├── requirements.txt # Python dependencies
 ├── .env # Environment variables (contains your API key)
 └── README.md # Project documentation
+```
 
 Create a `.env` file in the project root:
 OPEN_API_SECRET=your_openai_api_key_here
@@ -74,9 +76,10 @@ client.chat.completions.create(
     temperature=0.0
 )
 ```
-model: Specifies GPT-4o-mini.
-temperature=0.0: Makes responses more factual and consistent.
-max_tokens=100: Limits response length.
+- model: Specifies GPT-4o-mini.
+- temperature=0.0: Makes responses more factual and consistent.
+- max_tokens=100: Limits response length.
+
 
 
 
